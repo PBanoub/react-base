@@ -4,7 +4,7 @@ import messageReducer from './reducers/message'
 const reducer = combineReducers({
     messageReducer
 })
-const store = createStore(
+const store = createStore (
     reducer,
     applyMiddleware(thunk)
 )
